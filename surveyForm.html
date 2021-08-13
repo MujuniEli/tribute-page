@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey</title>
+    <title>Malcom X Survey</title>
     <style>
         label{
             display: block;
@@ -12,49 +12,58 @@
     </style>
 </head>
 <body>
-    <h2>Please provide details as requested below:</h2>
+    <h2>Please provide details You Know about Malcom X :</h2>
     <br><br>
     <form action="" class="my-form">
         <div class="form-item">
-            <label>First Name: </label>
-            <input type="text" name="firstname">
-            <label>Second Name: </label>
+            <label> <b>First Name:</b> </label>
+            <input type="text" name="firstname" required>
+            <label> <b>Last Name:</b> </label>
             <input type="text" name="secondname">
         </div>
 
         <div class="form-item">
-            <label>Email: </label>
+            <label> <b>Known for:</b> </label>
             <input type="text" name="email">
         </div>
 
         <div class="form-item">
-            <label>Phone No: </label>
-            <input type="number" name="phone">
+            <label> <b>Date of Birth:</b> </label>
+            <input type="text" name="phone" required>
+        </div>
+        <br>
+        <div class="form-item">
+            <label> <b>Spouse:</b> </label>
+            <label for="spouse">Betty White</label>
+            <input type="radio" name="spouse" value="Betty White">
+            <br>
+            <label for="spouse">Oprah Winfrey</label>
+            <input type="radio" name="spouse" value="Oprah Winfrey">
+            <br>
+            <label for="spouse">Queen Esther</label>
+            <input type="radio" name="spouse" value="Queen Esther">
+            <br>
+            <label for="spouse">Betty Shabazz</label>
+            <input type="radio" name="spouse" value="Betty Shabazz">
+
         </div>
 
         <div class="form-item">
-            <label>Age: </label>
-            <input type="number" name="email">
-        </div>
-
-        <div class="form-item">
-            <label>Favourite Color: </label>
-            <input type="color" name="fav-color">
-        </div>
-
-        <div class="form-item">
-            <label>Home District: </label>
-            <select name="home-district" id="">
-                <option value="">Kampala</option>
-                <option value="">Wakiso</option>
-                <option value="">Mukono</option>
-                <option value="">Jinja</option>
-                <option value="">Iganga</option>
-                <option value="">Mbale</option>
-                <option value="">Hoima</option>
-                <option value="">Kabale</option>
+            <label> <b>Cause of Death:</b> </label>
+            <select name="cause-of-death" id="">
+                <option value="">Heart Attack</option>
+                <option value="">Food Poisoning</option>
+                <option value="">Drowning</option>
+                <option value="">Assassination</option>
+                <option value="">Motor Accident</option>
             </select>
         </div>
+
+        <div class="form-item">
+            <label> <b>Quote from Malcom X:</b> </label>
+            <textarea name="message">Enter Your Quote</textarea>
+        </div>
+
         <br>
         <input class="button" type="submit" value="Submit" name="">
     </form>
